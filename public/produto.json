@@ -1,0 +1,38 @@
+{
+  "produto": {
+    "nome": "Smartphone XYZ Pro",
+    "imagem": "url-da-imagem-do-produto.jpg",
+    "descricao": "Smartphone XYZ Pro com tela de 6.5 polegadas, 128GB de armazenamento.",
+    "preco": "R$ 2.999,00",
+    "nota": 4.5
+  },
+  "vendedor": {
+    "nome": "Loja de Eletrônicos ABC",
+    "email": "contato@lojaabc.com",
+    "telefone": "(11) 99999-9999",
+    "nota": 4.7
+  },
+  "comentarios": [
+    {
+      "usuario": "João Silva",
+      "data": "10/03/2023",
+      "mensagem": "Ótimo produto, entrega rápida!",
+      "nota": 5
+    },
+  ],
+  "perguntas": [
+    {
+      "usuario": "Maria Oliveira",
+      "data": "12/03/2023",
+      "duvida": "O produto vem com garantia?",
+      "resposta": "Sim, garantia de 12 meses."
+    },
+  ],
+  "produtosRelacionados": [
+    {
+      "nome": "Smartphone XYZ Lite",
+      "imagem": "url-da-imagem-do-xyz-lite.jpg",
+      "preco": "R$ 1.599,00"
+    },
+  ]
+}

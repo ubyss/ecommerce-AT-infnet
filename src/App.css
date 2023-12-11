@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap');
+
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+  vertical-align: center;
+}
+
+body {
+  margin: 0
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 0 1rem;
+}
+
+/* .header-logo__icon{
+  color: white;
+  tet-de
+  
+} */
+
+.header .mini-cart {
+  cursor: pointer;
+}
+
+.cart-sidebar {
+  position: fixed;
+  right: -350px; 
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: right 0.3s ease-in-out;
+}
+
+.cart-sidebar--open {
+  right: 0;
+}
+
+.cart-sidebar__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cart-sidebar button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.main-container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 600px; 
+}
+
+.product-details,
+.seller-info,
+.comments,
+.questions,
+.related-products {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-name,
+.seller-title,
+.comments-title,
+.questions-title,
+.related-products-title {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.product-image,
+.related-product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+p {
+  color: #000;
+  margin: 0.5rem 0;
+}
+
+.comment-item,
+.question-item,
+.related-product {
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    padding: 0.5rem;
+  }
+}
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.seller-details {
+  display: flex;
+  align-items: center;
+}
+
+.seller-icon {
+  background-image: url('./../../public/abcloja.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.seller-text {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .product-details, .seller-info, .comments, .questions, .related-products {
+    width: 99%;
+  }
+
+  .related-products {
+    margin-top: 1rem
+  }
+
+  .related-product-image{
+    max-width: 300px;
+  }
+
+  .related-product{
+    cursor: pointer;
+  }
+}
+
+.comment-item{
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.comments{
+  height: calc(100% - 11rem);
+}
+
+
+.right-column{
+  /* width: 100%; */
+  flex-grow: 1
+}
+
+
+@media screen and (max-width: 1616px){
+
+  .right-column{
+    margin-top: 1rem
+  }
+  
+  .left-column{
+    width: 100%
+  }
+
+  .product-image, .related-product-image{
+    height: 300px;
+    width: 300px
+  }
+}
